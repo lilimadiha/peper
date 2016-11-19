@@ -21,7 +21,7 @@ export default {
             type: Boolean,
         },
         to: {
-            default: "dhkhdhajjdajdadkjajdk",
+            default: "sfsfsfsfsfsfs",
         }
     },
     computed: {
@@ -50,7 +50,8 @@ export default {
                     $chevron.velocity("reverse");
                     $navSublist.velocity("reverse");
                 }
-                $navList.on("mouseup", function() {
+                $navList.on("click", function(e) {
+                    e.preventDefault();
                     $chevron.velocity("reverse");
                     $navSublist.velocity("reverse");
                 });

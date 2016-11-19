@@ -43,20 +43,10 @@ Router.configure(router => {
         },
         {
             path: "/components/avatar",
-            name: "ComponentsButton",
+            name: "ComponentsAvatar",
             meta: { fixToolbar: true },
             components: {
                 default: ComponentsAvatar,
-                toolbar: Toolbar,
-                navigation: SideNavigation,
-            }
-        },
-        {
-            path: "/components/button",
-            name: "ComponentsButton",
-            meta: { fixToolbar: true },
-            components: {
-                default: ComponentsButton,
                 toolbar: Toolbar,
                 navigation: SideNavigation,
             }
